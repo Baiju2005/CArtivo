@@ -53,16 +53,17 @@ const Footer = () => {
             <form onSubmit={(e)=>{
               e.preventDefault();
               alert("Subscribed!");
+              e.target.reset();
               
             }} className="flex">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full border border-gray-300 px-3 py-2 text-sm outline-none focus:border-black"
+                className="w-full border-b-2 border-black px-3 py-2 text-sm outline-none focus:border-black mx-2"
               />
               <button
                 type="submit"
-                className="border border-black px-4 text-sm font-medium hover:bg-black hover:text-white transition"
+                className="border border-black px-4 text-sm font-medium bg-black cursor-pointer text-white transition"
               >
                 Subscribe
               </button>
