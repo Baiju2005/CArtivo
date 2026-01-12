@@ -15,6 +15,7 @@ import { CartProvider } from "./context/CartContext";
 
 
 import { Toaster } from "react-hot-toast";
+import ProductDetails from './pages/ProductDetails';
 
 const App = () => {
   return (
@@ -22,13 +23,14 @@ const App = () => {
       <DataProvider>
         <CartProvider>
           {/* App Wrapper */}
-          <div className="min-h-screen bg-gray-300">
+          <div className="min-h-screen ">
 
             <Navbar />
 
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/products' element={<Products />} />
+              <Route path="/products/:id" element={<ProductDetails />} />
               <Route path='/about' element={<About />} />
               <Route path='/contact' element={<Contact />} />
               <Route path='/cart' element={<Cart />} />
@@ -42,7 +44,7 @@ const App = () => {
           <Toaster
             position="top-right"
             toastOptions={{
-              duration: 2000,
+              duration: 500,
               style: {
                 background: "rgba(0,0,0,0.85)",
                 color: "#fff",

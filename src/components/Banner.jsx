@@ -14,7 +14,7 @@ const Banner = () => {
     const featuredProducts = products.slice(0, 5);
 
     return (
-        <section className="md:relative bg-gradient-to-r from-gray-50 via-white to-gray-50 overflow-hidden">
+        <section className="md:relative bg-gray-300 overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 py-14">
 
                 <Swiper

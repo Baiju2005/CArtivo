@@ -19,7 +19,7 @@ const Navbar = () => {
   const navLinkStyle = ({ isActive }) =>
     `relative px-1 py-2 text-sm font-medium transition
      after:content-[''] after:absolute after:left-0 after:bottom-0
-     after:h-[2px] after:bg-black after:transition-transform
+     after:h-[2px] after:bg-green-500 after:transition-transform
      after:w-full after:scale-x-0 after:origin-left
      ${isActive ? "after:scale-x-100" : "hover:after:scale-x-100"}`;
 
@@ -32,7 +32,7 @@ const Navbar = () => {
 
           {/* Logo */}
           <NavLink to="/" className="text-xl font-bold text-black">
-            Cartivo
+            <span className="text-green-500">Cart</span>ivo
           </NavLink>
 
           {/* Desktop Links */}
